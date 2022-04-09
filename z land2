@@ -1,13 +1,15 @@
---Made by DominosEmployee1
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Top = Instance.new("Frame")
-local x = Instance.new("ImageLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local TextLabel = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
+local Icon = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local TextLabel_2 = Instance.new("TextLabel")
 local PlayerName = Instance.new("TextLabel")
 local PlayerImage = Instance.new("ImageLabel")
@@ -27,10 +29,18 @@ local TextLabel_3 = Instance.new("TextLabel")
 local Admins = Instance.new("Frame")
 local CMDX = Instance.new("TextButton")
 local InfYield = Instance.new("TextButton")
-local Sirius = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local Sirius = Instance.new("TextButton")
+local Fish = Instance.new("TextButton")
 local Frame_4 = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
+local Credits = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local FlingFrame = Instance.new("Frame")
+local OpenFrame = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -53,15 +63,6 @@ Top.BorderSizePixel = 0
 Top.Position = UDim2.new(0, 0, -0.00205761311, 0)
 Top.Size = UDim2.new(0, 786, 0, 48)
 
-x.Name = "x"
-x.Parent = Top
-x.BackgroundTransparency = 1.000
-x.Position = UDim2.new(0.949094117, 0, 0.145833328, 0)
-x.Size = UDim2.new(0.0407124683, 0, 0.666666687, 0)
-x.Image = "rbxassetid://7072725342"
-
-UIAspectRatioConstraint.Parent = x
-
 TextLabel.Parent = Top
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -74,17 +75,16 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-TextButton.Parent = Top
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Position = UDim2.new(0.941475868, 0, 0.25, 0)
-TextButton.Size = UDim2.new(0, 37, 0, 27)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 14.000
-TextButton.TextTransparency = 1.000
-
 UICorner.Parent = Top
+
+Icon.Name = "Icon"
+Icon.Parent = Top
+Icon.BackgroundTransparency = 1.000
+Icon.Position = UDim2.new(0.972010076, 0, 9.70833302, 0)
+Icon.Size = UDim2.new(0.0547073781, 0, 0.4375, 0)
+Icon.Image = "rbxassetid://7072715317"
+
+UIAspectRatioConstraint.Parent = Icon
 
 TextLabel_2.Parent = Main
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -210,7 +210,6 @@ Refresh.MouseButton1Down:connect (function ()
 	game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 
-
 GunTP.Name = "GunTP"
 GunTP.Parent = Scripts
 GunTP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -279,12 +278,12 @@ patrick.TextTransparency = 0.500
 TextLabel_3.Parent = Main
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.0139949098, 0, 0.412465036, 0)
+TextLabel_3.Position = UDim2.new(0.00890583731, 0, 0.71493423, 0)
 TextLabel_3.Size = UDim2.new(0, 215, 0, 51)
 TextLabel_3.Font = Enum.Font.GothamSemibold
-TextLabel_3.Text = "Admin scripts"
+TextLabel_3.Text = "Admin/ect scripts"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 43.000
+TextLabel_3.TextSize = 20.000
 TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 
 Admins.Name = "Admins"
@@ -299,8 +298,9 @@ CMDX.Name = "CMDX"
 CMDX.Parent = Admins
 CMDX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CMDX.BackgroundTransparency = 1.000
-CMDX.Position = UDim2.new(-0.000902011991, 0, 0.169552132, 0)
-CMDX.Size = UDim2.new(0, 200, 0, 50)
+CMDX.BorderColor3 = Color3.fromRGB(27, 42, 53)
+CMDX.Position = UDim2.new(0.208272338, 0, 0.573807597, 0)
+CMDX.Size = UDim2.new(0, 115, 0, 50)
 CMDX.Font = Enum.Font.Gotham
 CMDX.Text = "CMD-X"
 CMDX.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -309,13 +309,12 @@ CMDX.MouseButton1Down:connect (function ()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
 end)
 
-
 InfYield.Name = "InfYield"
 InfYield.Parent = Admins
 InfYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 InfYield.BackgroundTransparency = 1.000
-InfYield.Position = UDim2.new(0.366070479, 0, -0.0432138219, 0)
-InfYield.Size = UDim2.new(0, 200, 0, 50)
+InfYield.Position = UDim2.new(-0.0018348624, 0, 0.573807597, 0)
+InfYield.Size = UDim2.new(0, 115, 0, 50)
 InfYield.Font = Enum.Font.Gotham
 InfYield.Text = "Infinite Yield"
 InfYield.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -325,12 +324,24 @@ InfYield.MouseButton1Down:connect (function ()
 end)
 
 
+TextLabel_4.Parent = Admins
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(1.10275245, 0, 0.93617022, 0)
+TextLabel_4.Size = UDim2.new(0, 130, 0, 15)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "RandomRobloxian is mean."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 9.000
+TextLabel_4.TextTransparency = 0.390
+TextLabel_4.TextWrapped = true
+
 Sirius.Name = "Sirius"
 Sirius.Parent = Admins
 Sirius.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Sirius.BackgroundTransparency = 1.000
-Sirius.Position = UDim2.new(-0.000902011991, 0, -0.0432138145, 0)
-Sirius.Size = UDim2.new(0, 200, 0, 50)
+Sirius.Position = UDim2.new(0.419281512, 0, 0.573807597, 0)
+Sirius.Size = UDim2.new(0, 115, 0, 50)
 Sirius.Font = Enum.Font.Gotham
 Sirius.Text = "Sirius"
 Sirius.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -339,16 +350,21 @@ Sirius.MouseButton1Down:connect (function ()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
 end)
 
-TextLabel_4.Parent = Admins
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0, 0, 0.459574461, 0)
-TextLabel_4.Size = UDim2.new(0, 547, 0, 127)
-TextLabel_4.Font = Enum.Font.GothamBold
-TextLabel_4.Text = "RandomRobloxian is mean."
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 33.000
-TextLabel_4.TextWrapped = true
+Fish.Name = "Fish"
+Fish.Parent = Admins
+Fish.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fish.BackgroundTransparency = 1.000
+Fish.Position = UDim2.new(0.630290568, 0, 0.573807597, 0)
+Fish.Size = UDim2.new(0, 137, 0, 50)
+Fish.Font = Enum.Font.Gotham
+Fish.Text = "Fish (For Pyro)"
+Fish.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fish.TextSize = 20.000
+Fish.MouseButton1Down:connect (function ()
+	while wait() do
+		game.Players.LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Swimming)
+	end
+end)
 
 Frame_4.Parent = Main
 Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -359,21 +375,66 @@ Frame_4.Size = UDim2.new(0.694656491, 0, 0.00300000003, 0)
 
 UICorner_3.Parent = Main
 
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Credits.BorderSizePixel = 0
+Credits.Position = UDim2.new(0, 0, 0.412465036, 0)
+Credits.Size = UDim2.new(0, 545, 0, 157)
+
+TextLabel_5.Parent = Credits
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(0, 545, 0, 157)
+TextLabel_5.Font = Enum.Font.GothamSemibold
+TextLabel_5.Text = "Updates coming soon.                                  GUI made by PatrickIol/Dominosemployee_1/Patrick22"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 27.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Credits
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0422018357, 0, 0.735936284, 0)
+TextLabel_6.Size = UDim2.new(0, 154, 0, 43)
+TextLabel_6.Font = Enum.Font.GothamSemibold
+TextLabel_6.Text = "Heil Bajewski! Heil Golimar"
+TextLabel_6.TextColor3 = Color3.fromRGB(44, 44, 44)
+TextLabel_6.TextSize = 14.000
+
+TextLabel_7.Parent = Credits
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(1.03302753, 0, -1.30573249, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Arms to Charms!"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextSize = 14.000
+
+FlingFrame.Name = "FlingFrame"
+FlingFrame.Parent = Main
+FlingFrame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+FlingFrame.BackgroundTransparency = 1.000
+FlingFrame.Position = UDim2.new(0.29516539, 0, 0.117283948, 0)
+FlingFrame.Size = UDim2.new(0, 304, 0, 133)
+
+OpenFrame.Name = "OpenFrame"
+OpenFrame.Parent = ScreenGui
+OpenFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+OpenFrame.BorderSizePixel = 0
+OpenFrame.Position = UDim2.new(0.923077047, 0, 0.946364701, 0)
+OpenFrame.Size = UDim2.new(0, 91, 0, 45)
+OpenFrame.Font = Enum.Font.GothamBold
+OpenFrame.Text = "Toggle GUI"
+OpenFrame.TextColor3 = Color3.fromRGB(255, 255, 255)
+OpenFrame.TextSize = 14.000
+
+UICorner_4.Parent = OpenFrame
+
 -- Scripts:
 
-local function VNBB_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-	
-	
-	
-	
-end
-coroutine.wrap(VNBB_fake_script)()
-local function DXCACX_fake_script() -- Main.LocalScript 
+local function VYKB_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local frame = script.Parent
@@ -388,13 +449,14 @@ local function DXCACX_fake_script() -- Main.LocalScript
 	frame.PlayerImage.Image = content
 	frame.PlayerName.Text = player.Name
 end
-coroutine.wrap(DXCACX_fake_script)()
+coroutine.wrap(VYKB_fake_script)()
+local function BVFTOKC_fake_script() -- OpenFrame.LocalScript 
+	local script = Instance.new('LocalScript', OpenFrame)
 
-
-
-
-
-
-
-
---By Patrick22
+	local frame = script.Parent.Parent.Main
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		frame.Visible = not frame.Visible
+	end)
+end
+coroutine.wrap(BVFTOKC_fake_script)()
