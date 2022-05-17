@@ -191,7 +191,7 @@ BaseTP.Text = "Base Teleport"
 BaseTP.TextColor3 = Color3.fromRGB(255, 255, 255)
 BaseTP.TextSize = 20.000
 BaseTP.MouseButton1Down:connect (function ()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3934.69263, 54.7799225, -10968.5225, 0.191601321, 1.18762927e-07, -0.98147285, -1.58240621e-08, 1, 1.17915661e-07, 0.98147285, -7.06190928e-09, 0.191601321)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-185.261658, 185.215683, -20.0767498, 0.999787629, -2.23941399e-09, -0.0206085015, 2.2711486e-09, 1, 1.51647828e-09, 0.0206085015, -1.56296109e-09, 0.999787629)
 end)
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DominosEmployee12/whitelist/main/whitelist1"))()
@@ -225,23 +225,23 @@ GunTP.MouseButton1Down:connect (function ()
 	local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
 	local pos = p1.CFrame
 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3876.32251, 58.8810692, -10906.3955, -0.740248322, 5.68546241e-08, 0.672333539, 4.29166853e-08, 1, -3.73112705e-08, -0.672333539, 1.23472099e-09, -0.740248322)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-104.802887, 189.316833, 13.2538128, -0.789551973, -1.45434409e-09, 0.613683701, -6.09087323e-08, 1, -7.59939738e-08, -0.613683701, -9.7379889e-08, -0.789551973)
 
 	wait(.5)
 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3885.3186, 58.8810692, -10902.7471, -0.604279995, 4.7846715e-08, 0.796772063, -5.60956082e-08, 1, -1.02594171e-07, -0.796772063, -1.06691019e-07, -0.604279995)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-109.824211, 189.316833, 19.7146301, -0.789551973, -1.54559754e-09, 0.613683701, 3.26316787e-08, 1, 4.45017605e-08, -0.613683701, 5.51619834e-08, -0.789551973)
 
 	wait(.5)
 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3892.05078, 58.135788, -10897.7168, -0.0523766726, 4.71356421e-09, 0.998627424, -8.22689206e-09, 1, -5.15153253e-09, -0.998627424, -8.48541948e-09, -0.0523766726)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.56218, 188.571533, 26.3684311, -0.68505621, -9.57793276e-08, 0.728490233, -6.429444e-08, 1, 7.10153927e-08, -0.728490233, 1.81166304e-09, -0.68505621)
 
 	wait(.5)
 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3898.89722, 58.5592308, -10893.4951, -0.613988996, -6.99316369e-11, 0.789314568, 8.68355388e-10, 1, 7.64070918e-10, -0.789314568, 1.15453669e-09, -0.613988996)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115.56218, 188.571533, 26.3684311, -0.68505621, -9.57793276e-08, 0.728490233, -6.429444e-08, 1, 7.10153927e-08, -0.728490233, 1.81166304e-09, -0.68505621)
 
 	wait(.5)
 
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3906.95435, 54.7799225, -10904.9873, -0.974883735, -8.77387762e-08, 0.22271429, -7.11755277e-08, 1, 8.23966602e-08, -0.22271429, 6.44753584e-08, -0.974883735)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-120.856026, 188.994995, 32.8826942, -0.858594179, 8.4511214e-08, 0.512655914, 8.06660267e-08, 1, -2.97506251e-08, -0.512655914, 1.58102029e-08, -0.858594179)
 
 	wait(.5)
 
@@ -259,7 +259,7 @@ RoomTP.Text = "Room Teleport"
 RoomTP.TextColor3 = Color3.fromRGB(255, 255, 255)
 RoomTP.TextSize = 20.000
 RoomTP.MouseButton1Down:connect (function ()
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3339.19751, 66.5499649, -10936.8662, -0.904603779, 1.03928099e-09, -0.426253498, -5.89941118e-09, 1, 1.49580259e-08, 0.426253498, 1.60457301e-08, -0.904603779)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(370.62674, 196.985733, -237.667313, -0.202742428, 3.46286733e-08, -0.979232073, -8.26734805e-08, 1, 5.24799937e-08, 0.979232073, 9.15964478e-08, -0.202742428)
 end)
 
 patrick.Name = "patrick"
